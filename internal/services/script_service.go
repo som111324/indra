@@ -51,7 +51,7 @@ func (s *ScriptService) DetectandGenerateScript(repoUrl, startCommand string) (s
 	}
 
 	if startCommand == "" {
-		startCommand = projectType.StartCommand
+		startCommand = projectType.StartCommand //staypu command
 	}
 
 	return s.generatestarupscript(repoUrl, projectType.Type, startCommand)
