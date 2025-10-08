@@ -37,7 +37,7 @@ func (s *ScriptService) generatestarupscript(repoURL, projectType, startcommand 
 
 	script = strings.ReplaceAll(script, "{{REPO_URL}}", repoURL)
 	script = strings.ReplaceAll(script, "{{INSTALL_COMMAND}}", installcommand)
-	script = strings.ReplaceAll(script, "{{START_COMMAND}}", startcommand)
+	script = strings.ReplaceAll(script, "{{START_COMMAND}}", startcommand) //it was startcommand
 
 	return script, nil
 
